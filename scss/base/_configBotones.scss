@@ -1,0 +1,17 @@
+//configuración de boton dependiendo el BK del contenedor
+@import '../base/color';
+
+@mixin colorBoton($colorBg) {
+    @if $colorBg== map-get($paletaColores, colorTarjeta) {
+        background-color: map-get($paletaColores, colorClaro) ;
+        border-color: black;
+    }
+    @if $colorBg== map-get($paletaColores, colorSeparador) {
+        background-color: map-get($paletaColores, colorOscuro);
+        border-color: pink;
+    }
+    /* @else{
+        background-color: map-get($paletaColores, colorOscuro);
+        border-color: orange;
+    } */
+}

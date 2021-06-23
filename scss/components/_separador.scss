@@ -1,0 +1,26 @@
+@import '../base/color';
+@import '../base/configImagenes';
+@import '../base/configBotones';
+
+$colorSeparador:map-get($paletaColores, colorSeparador);
+
+/* Separador */
+.separadorBG{
+    background-color: $colorSeparador;
+}
+
+.separadorLink{
+    cursor: default;
+    &:hover{
+        @include configuracionAnimacion(.5s, scale(1.03));
+    }
+}
+
+.contactoEmail{
+    .btn{
+        @include colorBoton(map-get($paletaColores, colorSeparador));
+        &:hover{
+            border-color: rgba(darken($colorSeparador, 90%),1.0);
+        }
+    }
+}

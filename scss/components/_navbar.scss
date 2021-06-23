@@ -1,0 +1,70 @@
+@import '../base/color';
+@import '../base/configBotones';
+
+
+/* Header y navbar*/
+
+.logo{
+    font-size: 30px;
+    orientation: landscape;
+    width: 75px;
+    height: 75px;
+    
+}
+ 
+.whatsapp{
+    text-align: right;
+    .whatsappImagen{
+        width: 40px;
+        &:hover{
+            transition: all .5s ease;
+            
+            height: 70px;
+            width: 70px;
+        }
+    }
+}
+
+.tituloMenu{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.carrito {
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+header{
+    /* .btn-primary{
+        border-color: map-get($paletaColores, colorOscuro);
+        
+    } */
+    .offcanvasBack{
+        @include colorBoton(map-get($paletaColores, colorOscuro));
+        /* background-color: map-get($paletaColores, colorclar);
+        color: map-get($paletaColores, colorOscuro); */
+        &:hover{
+            @include colorBoton(map-get($paletaColores, colorOscuro));
+            border-color: white;
+        }
+        &:enabled{
+            @include colorBoton(map-get($paletaColores, colorOscuro));
+        }   
+    }
+}
+
+
+
+/* .btn-primary{
+    border-color: map-get($paletaColores, colorOscuro);
+    
+}
+
+.offcanvasBack{
+    background-color: map-get($paletaColores, colorOscuro);
+    color: map-get($paletaColores, colorOscuro);
+}
+ */
+

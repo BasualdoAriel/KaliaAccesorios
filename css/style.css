@@ -1,0 +1,244 @@
+/* Header y navbar*/
+.logo {
+  font-size: 30px;
+  orientation: landscape;
+  width: 75px;
+  height: 75px;
+}
+
+.whatsapp {
+  text-align: right;
+}
+.whatsapp .whatsappImagen {
+  width: 40px;
+}
+.whatsapp .whatsappImagen:hover {
+  transition: all 0.5s ease;
+  height: 70px;
+  width: 70px;
+}
+
+.tituloMenu {
+  font-family: "Montserrat", sans-serif;
+}
+
+.carrito {
+  font-size: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+header {
+  /* .btn-primary{
+      border-color: map-get($paletaColores, colorOscuro);
+
+  } */
+}
+header .offcanvasBack {
+  background-color: #f6d1c99c;
+  border-color: black;
+  /* @else{
+      background-color: map-get($paletaColores, colorOscuro);
+      border-color: orange;
+  } */
+  /* background-color: map-get($paletaColores, colorclar);
+  color: map-get($paletaColores, colorOscuro); */
+}
+header .offcanvasBack:hover {
+  background-color: #f6d1c99c;
+  border-color: black;
+  /* @else{
+      background-color: map-get($paletaColores, colorOscuro);
+      border-color: orange;
+  } */
+  border-color: white;
+}
+header .offcanvasBack:enabled {
+  background-color: #f6d1c99c;
+  border-color: black;
+  /* @else{
+      background-color: map-get($paletaColores, colorOscuro);
+      border-color: orange;
+  } */
+}
+
+/* .btn-primary{
+    border-color: map-get($paletaColores, colorOscuro);
+
+}
+
+.offcanvasBack{
+    background-color: map-get($paletaColores, colorOscuro);
+    color: map-get($paletaColores, colorOscuro);
+}
+ */
+/* Inicio */
+body {
+  background-image: url(../images/19021593.jpg);
+  user-select: none;
+}
+
+.tituloPrincipal {
+  padding-top: 100px !important;
+  font-family: "Tinos", serif;
+}
+
+.tituloAccesorios {
+  font-family: "Dancing Script", cursive;
+  font-size: 30PX;
+  margin-top: -20px;
+  margin-left: 200px;
+}
+
+.quienesSomos {
+  font-style: oblique;
+}
+
+.nosotrosKalia {
+  text-justify: auto;
+  font-weight: 350;
+  background-color: #f6d1c99c;
+  border-radius: 6px;
+}
+
+.imagenProductos {
+  text-align: center;
+  padding: 20px 20px;
+  width: 300px;
+  height: 250px;
+  padding-left: 15px;
+}
+
+/* Separador */
+.separadorBG {
+  background-color: rgba(192, 178, 178, 0.664);
+}
+
+.separadorLink {
+  cursor: default;
+}
+.separadorLink:hover {
+  transition: all 0.5s;
+  transform: scale(1.03);
+}
+
+.contactoEmail .btn {
+  background-color: #212529;
+  border-color: pink;
+  /* @else{
+      background-color: map-get($paletaColores, colorOscuro);
+      border-color: orange;
+  } */
+}
+.contactoEmail .btn:hover {
+  border-color: black;
+}
+
+/* Imagenes index */
+.imagenProductos {
+  text-align: center;
+  padding: 20px 20px;
+  width: 300px;
+  height: 250px;
+  padding-left: 15px;
+}
+
+.tarjetaIndex:hover {
+  transition: all 0.5s;
+  transform: scale(1.07);
+  -webkit-box-shadow: -1px 4px 15px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 4px 15px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 4px 15px 4px rgba(0, 0, 0, 0.75);
+}
+.tarjetaIndex .btn {
+  background-color: #f6d1c99c;
+  border-color: black;
+  /* @else{
+      background-color: map-get($paletaColores, colorOscuro);
+      border-color: orange;
+  } */
+}
+.tarjetaIndex .btn:hover {
+  border-color: white;
+}
+
+.imagenProductoIndex {
+  width: 286px;
+  height: 182px;
+}
+
+.textoProductoIndex {
+  color: #555353;
+}
+
+/* Mapa Contacto*/
+.map {
+  min-height: 90%;
+}
+
+.tituloSeccion {
+  padding-top: 100px;
+  padding-bottom: 25px;
+  font-family: "Dancing Script", cursive;
+}
+
+.imagenProductos {
+  text-align: center;
+  padding: 20px 20px;
+  width: 300px;
+  height: 250px;
+  padding-left: 15px;
+}
+
+.tarjetaProducto {
+  background-color: rgba(192, 178, 178, 0.664);
+}
+.tarjetaProducto .btn {
+  background-color: #212529;
+  border-color: pink;
+  /* @else{
+      background-color: map-get($paletaColores, colorOscuro);
+      border-color: orange;
+  } */
+}
+.tarjetaProducto:hover {
+  transition: all 0.5s;
+  transform: scale(1.03);
+  -webkit-box-shadow: -1px 4px 15px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 4px 15px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 4px 15px 4px rgba(0, 0, 0, 0.75);
+}
+
+.link404 {
+  text-decoration: none;
+  color: black;
+}
+.link404:hover {
+  color: white;
+}
+
+.body404 {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.descripcionError {
+  padding-left: 200px;
+}
+
+@media screen and (max-width: 300px) and (max-width: 900px) {
+  .imagen404 {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  .imagen404 {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

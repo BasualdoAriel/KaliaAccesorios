@@ -1,0 +1,15 @@
+//Config imagen
+
+@mixin configuracionAnimacion($tiempo, $transformacion) {
+    transition: all $tiempo;
+    transform: $transformacion;
+
+}
+
+%imagenesProductos{
+    text-align: center;
+    padding: 20px 20px;
+    width: 300px;
+    height: 250px;
+    padding-left: 15px;
+}

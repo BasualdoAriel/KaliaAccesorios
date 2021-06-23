@@ -1,0 +1,26 @@
+@import '../base/configFuente';
+@import '../base/configImagenes';
+@import '../base/color';
+@import '../base/configBotones';
+//Secciones scss
+
+.tituloSeccion{
+    @extend %configFuenteSeccion;
+}
+
+.imagenProductos{
+    @extend %imagenesProductos;
+}
+
+.tarjetaProducto{
+    background-color: map-get($paletaColores, colorSeparador);
+    .btn{
+        @include colorBoton(map-get($paletaColores, colorSeparador));
+    }
+    &:hover{
+        @include configuracionAnimacion(0.5s, scale(1.03));
+        -webkit-box-shadow: -1px 4px 15px 4px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 4px 15px 4px rgba(0,0,0,0.75);
+        box-shadow: -1px 4px 15px 4px rgba(0,0,0,0.75);
+    }
+}
