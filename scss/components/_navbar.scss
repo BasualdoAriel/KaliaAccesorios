@@ -1,24 +1,22 @@
 @import '../base/color';
 @import '../base/configBotones';
 
-
 /* Header y navbar*/
 
 .logo{
     font-size: 30px;
     orientation: landscape;
     width: 75px;
-    height: 75px;
-    
+    height: 75px;    
 }
  
 .whatsapp{
-    text-align: right;
+    /* text-align: right; */
+    z-index: 1;
     .whatsappImagen{
         width: 40px;
         &:hover{
             transition: all .5s ease;
-            
             height: 70px;
             width: 70px;
         }
@@ -37,10 +35,6 @@
 }
 
 header{
-    /* .btn-primary{
-        border-color: map-get($paletaColores, colorOscuro);
-        
-    } */
     .offcanvasBack{
         @include colorBoton(map-get($paletaColores, colorOscuro));
         /* background-color: map-get($paletaColores, colorclar);
@@ -54,17 +48,3 @@ header{
         }   
     }
 }
-
-
-
-/* .btn-primary{
-    border-color: map-get($paletaColores, colorOscuro);
-    
-}
-
-.offcanvasBack{
-    background-color: map-get($paletaColores, colorOscuro);
-    color: map-get($paletaColores, colorOscuro);
-}
- */
-
