@@ -1,4 +1,8 @@
 /* Header y navbar*/
+.navbarMargen {
+  margin: 0 auto !important;
+}
+
 .logo {
   font-size: 30px;
   orientation: landscape;
@@ -65,6 +69,8 @@ body {
 
 .tituloPrincipal {
   padding-top: 100px !important;
+  padding-left: auto !important;
+  padding-right: auto !important;
   font-family: "Tinos", serif;
 }
 
@@ -145,6 +151,11 @@ body {
 }
 .tarjetaIndex .btn:hover {
   border-color: white;
+}
+
+.paddingTarjetas {
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 .imagenProductoIndex {

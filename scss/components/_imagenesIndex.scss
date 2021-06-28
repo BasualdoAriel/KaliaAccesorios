@@ -8,6 +8,7 @@
 
 $colorBgTarjeta: #212529;
 
+
 .tarjetaIndex{
     &:hover{
         @include configuracionAnimacion(0.5s, scale(1.07));
@@ -22,6 +23,11 @@ $colorBgTarjeta: #212529;
             border-color: white;
         }
     }
+}
+
+.paddingTarjetas{
+    padding-bottom: 10px;
+    padding-top: 5px;
 }
 
 .imagenProductoIndex{

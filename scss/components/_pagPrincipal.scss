@@ -1,5 +1,5 @@
 /* Inicio */
-
+@import '../base/medias';
 
 body{
     background-image: url(../images/19021593.jpg);
@@ -8,6 +8,8 @@ body{
 
 .tituloPrincipal{
     padding-top: 100px !important;
+    padding-left: auto !important;
+    padding-right: auto !important;
     font-family: 'Tinos', serif;
 }
 
