@@ -5,11 +5,17 @@
 
 .logo {
   font-size: 30px;
-  orientation: landscape;
+  /* orientation: landscape; */
   width: 75px;
   height: 75px;
 }
 
+@media (min-width: 300px) {
+  .logo {
+    width: 55px;
+    height: 55px;
+  }
+}
 .whatsapp {
   /* text-align: right; */
   z-index: 1;

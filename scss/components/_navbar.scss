@@ -1,5 +1,6 @@
 @import '../base/color';
 @import '../base/configBotones';
+@import '../base/medias';
 
 /* Header y navbar*/
 
@@ -10,11 +11,18 @@
 
 .logo{
     font-size: 30px;
-    orientation: landscape;
+    /* orientation: landscape; */
     width: 75px;
-    height: 75px;    
+    height: 75px;  
 }
  
+@media (min-width:$telefono) {
+   .logo{
+    width: 55px;
+    height: 55px;
+   }
+}  
+
 .whatsapp{
     /* text-align: right; */
     z-index: 1;
