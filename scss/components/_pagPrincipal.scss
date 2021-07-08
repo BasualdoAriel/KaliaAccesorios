@@ -1,5 +1,6 @@
 /* Inicio */
 @import '../base/medias';
+@import '../base/color';
 
 body{
     background-image: url(../images/19021593.jpg);
@@ -7,9 +8,9 @@ body{
 }
 
 .tituloPrincipal{
-    padding-top: 100px !important;
-    padding-left: auto !important;
-    padding-right: auto !important;
+    padding-top: 100px;
+    padding-left: auto;
+    padding-right: auto;
     font-family: 'Tinos', serif;
 }
 
@@ -27,6 +28,13 @@ body{
 .nosotrosKalia{
     text-justify: auto;
     font-weight: 350;
-    background-color: #f6d1c99c;
+    background-color: map-get($paletaColores, colorTexto);
     border-radius: 6px;
+}
+
+.form-control{
+    &:focus{
+        border: purple;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.116), 0 0 8px rgba(206, 109, 177, 0.6);
+    }
 }

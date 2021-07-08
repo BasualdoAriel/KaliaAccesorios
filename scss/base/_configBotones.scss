@@ -10,8 +10,18 @@
         background-color: map-get($paletaColores, colorOscuro);
         border-color: pink;
     }
-    /* @else{
-        background-color: map-get($paletaColores, colorOscuro);
-        border-color: orange;
-    } */
+    @else{
+        background-color:  map-get($paletaColores, colorBtnOscuro);
+    }
+}
+
+@mixin backgroundCanvas($colorBg) {
+    @if $colorBg== map-get($paletaColores, colorTarjeta) {
+        background-color: map-get($paletaColores, colorCanvas) ;
+        border-color: black;
+    }
+    @if $colorBg== map-get($paletaColores, colorSeparador) {
+        background-color: map-get($paletaColores, colorCanvas);
+        border-color: pink;
+    }
 }

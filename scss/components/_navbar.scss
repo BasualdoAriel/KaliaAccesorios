@@ -5,9 +5,6 @@
 /* Header y navbar*/
 
 
-.navbarMargen{
-    margin: 0 auto !important;
-}
 
 .logo{
     font-size: 30px;
@@ -24,14 +21,24 @@
 }  
 
 .whatsapp{
-    /* text-align: right; */
+    padding-left: 20px;
+    padding-bottom: 10px;
+    @media (min-width:$telefono){
+        padding-left: 7px;
+        padding-bottom: 37px;
+    }
+
     z-index: 1;
     .whatsappImagen{
+        @media (min-width:$telefono){
+            height: 35px;
+            width: 35px;
+        }
         width: 40px;
         &:hover{
             transition: all .5s ease;
-            height: 70px;
-            width: 70px;
+            height: 50px;
+            width: 50px;
         }
     }
 }
@@ -49,15 +56,13 @@
 
 header{
     .offcanvasBack{
-        @include colorBoton(map-get($paletaColores, colorOscuro));
-        /* background-color: map-get($paletaColores, colorclar);
-        color: map-get($paletaColores, colorOscuro); */
+        @include backgroundCanvas(map-get($paletaColores, colorOscuro));
         &:hover{
-            @include colorBoton(map-get($paletaColores, colorOscuro));
+            @include backgroundCanvas(map-get($paletaColores, colorOscuro));
             border-color: white;
         }
         &:enabled{
-            @include colorBoton(map-get($paletaColores, colorOscuro));
-        }   
+            @include backgroundCanvas(map-get($paletaColores, colorOscuro));
+        }  
     }
 }
