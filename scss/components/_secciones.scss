@@ -8,9 +8,6 @@
     @extend %configFuenteSeccion;
 }
 
-.imagenProductos{
-    @extend %imagenesProductos;
-}
 
 .tarjetaProducto{
     background-color: map-get($paletaColores, colorSeparador);
