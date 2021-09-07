@@ -38,6 +38,8 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="../css/style.css">
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
 
   <title>Riñoneras</title>
   <link rel="shortcut icon" href="../images/logo.ico">
@@ -46,45 +48,50 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img src="../images/logoOscuro.jpg" alt="logo" class="logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../images/logoOscuro.jpg" alt="logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle tituloMenu active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    PRODUCTOS
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="../sections/billeteras.html">Billeteras</a></li>
-                    <li><a class="dropdown-item" href="../sections/ruanas.html">Ruanas</a></li>
-                    <li><a class="dropdown-item" href="../sections/acero.html">Acero Blanco</a></li>
-                    <li><a class="dropdown-item" href="../sections/rinioneras.html">Riñoneras</a></li>
-                    <li><a class="dropdown-item" href="../sections/acc-pelo.html">Accesorios para el pelo</a></li>
-                    <li><a class="dropdown-item" href="../sections/medias.html">Medias</a></li>
-                </ul>
-                </li>
-              <li class="nav-item">
-                <a class="nav-link active tituloMenu" aria-current="page" href="../index.html">HOME</a>
-              </li>
-            </ul>
-            <button class="btn btn-primary offcanvasBack" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="../images/carrito.svg" alt="carrito de compras" class="carrito"></button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-              <div class="offcanvas-header">
-                <h5 id="offcanvasRightLabel">Tu carrito</h5>
-                <button type="button" class="btn-close text-reset " data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body ">
-              </div>
-              <div class="offcanvas-footer">
-                <button type="button" class="btn btn-dark mx-2 mb-2 vaciarCarrito">Vaciar Carrito</button>
-              </div>
+              <a class="nav-link dropdown-toggle tituloMenu active" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                PRODUCTOS
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../sections/billeteras.html">Billeteras</a></li>
+                <li><a class="dropdown-item" href="../sections/ruanas.html">Ruanas</a></li>
+                <li><a class="dropdown-item" href="../sections/acero.html">Acero Blanco</a></li>
+                <li><a class="dropdown-item" href="../sections/rinioneras.html">Riñoneras</a></li>
+                <li><a class="dropdown-item" href="../sections/acc-pelo.html">Accesorios para el pelo</a></li>
+                <li><a class="dropdown-item" href="../sections/medias.html">Medias</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active tituloMenu" aria-current="page" href="../index.html">HOME</a>
+            </li>
+          </ul>
+          <button class="btn btn-primary offcanvasBack" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="../images/carrito.svg"
+              alt="carrito de compras" class="carrito"></button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Tu carrito</h5>
+              <button type="button" class="btn-close text-reset " data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+            </div>
+            <div class="offcanvas-footer">
+              <button type="button" class="btn btn-dark mx-2 mb-2 vaciarCarrito">Vaciar Carrito</button>
             </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
   </header>
 
   <section class="producto container text-center ">
@@ -95,7 +102,8 @@
         <div class="card tarjetaProducto mx-auto" style="width: 18rem;">
           <img src="../images/Rinio.jpg" class="card-img-top imagenProducto" alt="Riñonera negra">
           <div class="card-img-overlay d-flex">
-            <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal" data-bs-target="#modalRinioNegra">Ver más</a>
+            <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal"
+              data-bs-target="#modalRinioNegra">Ver más</a>
           </div>
         </div>
       </div>
@@ -103,7 +111,8 @@
         <div class="card tarjetaProducto mx-auto" style="width: 18rem;">
           <img src="../images/rinio1.jpeg" class="card-img-top imagenProducto" alt="Riñoneras de colores">
           <div class="card-img-overlay d-flex">
-            <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal" data-bs-target="#modalRinioColores">Ver más</a>
+            <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal"
+              data-bs-target="#modalRinioColores">Ver más</a>
           </div>
         </div>
       </div>
@@ -111,7 +120,8 @@
         <div class="card tarjetaProducto mx-auto" style="width: 18rem;">
           <img src="../images/rinio2.jpeg" class="card-img-top imagenProducto" alt="Riñoneras negras">
           <div class="card-img-overlay d-flex">
-            <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal" data-bs-target="#modalRinioDoble">Ver más</a>
+            <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal"
+              data-bs-target="#modalRinioDoble">Ver más</a>
           </div>
         </div>
       </div>
@@ -119,7 +129,8 @@
         <div class="card tarjetaProducto mx-auto" style="width: 18rem;">
           <img src="../images/rinio3.jpeg" class="card-img-top imagenProducto" alt="Riñonera negra con cadena">
           <div class="card-img-overlay d-flex">
-            <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal" data-bs-target="#modalRinioCadena">Ver más</a>
+            <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal"
+              data-bs-target="#modalRinioCadena">Ver más</a>
           </div>
         </div>
       </div>
@@ -130,7 +141,8 @@
         <div class="card tarjetaProducto mx-auto" style="width: 18rem;">
           <img src="../images/rinio4.jpeg" class="card-img-top imagenProducto " alt="Riñonera marron">
           <div class="card-img-overlay d-flex">
-            <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal" data-bs-target="#modalRinioMarron">Ver más</a>
+            <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal"
+              data-bs-target="#modalRinioMarron">Ver más</a>
           </div>
         </div>
       </div>
@@ -138,7 +150,8 @@
         <div class="card tarjetaProducto mx-auto" style="width: 18rem;">
           <img src="../images/rinio5.jpeg" class="card-img-top imagenProducto" alt="Riñonera negra texturada">
           <div class="card-img-overlay d-flex">
-            <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal" data-bs-target="#modalRinioText">Ver más</a>
+            <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal"
+              data-bs-target="#modalRinioText">Ver más</a>
           </div>
         </div>
       </div>
@@ -146,7 +159,8 @@
         <div class="card tarjetaProducto mx-auto" style="width: 18rem;">
           <img src="../images/rinio8.jpeg" class="card-img-top imagenProducto" alt="Riñonera negra y blanca">
           <div class="card-img-overlay d-flex">
-            <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal" data-bs-target="#modalRinioBlanca">Ver más</a>
+            <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal"
+              data-bs-target="#modalRinioBlanca">Ver más</a>
           </div>
         </div>
       </div>
@@ -154,7 +168,8 @@
         <div class="card tarjetaProducto mx-auto" style="width: 18rem;">
           <img src="../images/rinio7.jpeg" class="card-img-top imagenProducto" alt="Riñoneras negra y amarilla">
           <div class="card-img-overlay d-flex">
-            <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal" data-bs-target="#modalRinioAmarilla">Ver más</a>
+            <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal"
+              data-bs-target="#modalRinioAmarilla">Ver más</a>
           </div>
         </div>
       </div>
@@ -164,7 +179,8 @@
 
   <!-- Modals -->
   <!-- Rinio negra -->
-  <div class="modal fade text-center" id="modalRinioNegra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade text-center" id="modalRinioNegra" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -182,7 +198,8 @@
     </div>
   </div>
 
-  <div class="modal fade text-center" id="modalRinioColores" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade text-center" id="modalRinioColores" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -200,7 +217,8 @@
     </div>
   </div>
 
-  <div class="modal fade text-center" id="modalRinioDoble" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade text-center" id="modalRinioDoble" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -218,7 +236,8 @@
     </div>
   </div>
 
-  <div class="modal fade text-center" id="modalRinioCadena" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade text-center" id="modalRinioCadena" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -236,7 +255,8 @@
     </div>
   </div>
 
-  <div class="modal fade text-center" id="modalRinioMarron" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade text-center" id="modalRinioMarron" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -254,7 +274,8 @@
     </div>
   </div>
 
-  <div class="modal fade text-center" id="modalRinioText" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade text-center" id="modalRinioText" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -272,7 +293,8 @@
     </div>
   </div>
 
-  <div class="modal fade text-center" id="modalRinioBlanca" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade text-center" id="modalRinioBlanca" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -290,7 +312,8 @@
     </div>
   </div>
 
-  <div class="modal fade text-center" id="modalRinioAmarilla" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade text-center" id="modalRinioAmarilla" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -325,6 +348,17 @@
     </div>
   </section>
 
+  <!-- Toast -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 0">
+    <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="../images/carrito.svg" class="rounded me-2 bg-transparent" alt="..." width="17" height="17">
+        <strong class="me-auto">Agregaste</strong>
+        <small>Ahora mismo</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <section class="container">
