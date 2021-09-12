@@ -81,25 +81,51 @@ function RecargarCarrito(){
         arrayProd=productosLs.split(',');
         let i=0
         for(i;i<arrayProd.length;i++){
-            carrito.append($(`<div class="row pt-2"><p class="col-8">${arrayProd[i]} X1</p><button id="btn${i}"class="btn btn-danger col-4">X</button>`))
+            carrito.append($(`<div class="row pt-2"><p class="col-8">${arrayProd[i]}</p><button id="btn${i}"class="btn btn-danger col-4">X</button>`))
             ActualizarCarrito(arrayProd[i]);
         }
         contador=contador+i+1;
     }
 }
 
-/* function EliminarProducto(){
-    let productoEliminar=$(".btn-danger");
-
-    for(let producto of productoEliminar){
-        producto.onclick=()=>{
-            let id=productoEliminar.attr('id');
-            $(`#${id}`).parent().remove();
+/*  */
+function ManejarProductosCarrito(producto){
+    let arrayNuevo=[]
+    for(let i=0;i<productosCarrito.length;i++){
+        console.log(`${productosCarrito[i]} carrito/producto ${producto}`);
+        console.table(productosCarrito);
+        console.table(arrayNuevo);
+        if(productosCarrito[i]!=producto){
+            arrayNuevo.push(productosCarrito[i]);
         }
     }
+    console.table(arrayNuevo)
+    productosCarrito=arrayNuevo;
+    localStorage.clear();
+    localStorage.setItem('productos', arrayNuevo);
+
+
+}
+
+/* Esta función elimina un producto específico del carrito INCOMPLETA */
+function  EliminarProducto(){
+    let productoEliminar=$(".btn-danger");
+    for(let producto of productoEliminar){
+        producto.onclick=()=>{
+            console.log(producto)
+            let id=($(producto).attr('id'));
+            /* id= id.attr('id') */
+            /* console.log(id) */
+            let tituloProducto= producto.parentElement.firstChild.textContent;
+            console.log(productosCarrito)
+            console.log(tituloProducto);
+            $(`#${id}`).parent().remove();
+            ManejarProductosCarrito(tituloProducto)
+        }
+    }
+  
     
-    
-} */
+}
 
 /* Esta función accede al LS*/
 function LeerLS(){
@@ -115,7 +141,7 @@ function main(){
     $(".offcanvas-body").empty();
     AgregarAlCarrito(carrito)
     $(document).ready(LeerLS());
-    /* EliminarProducto(); */
+    EliminarProducto();
     VaciarCarrito();
 }   
 
