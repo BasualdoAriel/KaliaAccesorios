@@ -59,6 +59,7 @@ function EliminarCarrito(){
     $(".offcanvas-body").slideUp('slow',()=>{
         $(".offcanvas-body").empty();
         $(".toast").children(".toast-body").remove();
+        
         $(".offcanvas-body").slideDown('fast');
     });
 }
@@ -69,6 +70,7 @@ function VaciarCarrito(){
     botonVaciar.click(function () {
         EliminarCarrito();
         localStorage.clear();
+        productosCarrito=[];
       })
 }
 
@@ -80,10 +82,13 @@ function RecargarCarrito(){
         productosLs=localStorage.getItem('productos');
         arrayProd=productosLs.split(',');
         let i=0
-        for(i;i<arrayProd.length;i++){
-            carrito.append($(`<div class="row pt-2"><p class="col-8">${arrayProd[i]}</p><button id="btn${i}"class="btn btn-danger col-4">X</button>`))
-            ActualizarCarrito(arrayProd[i]);
+        if(arrayProd[i]!=''){
+            for(i;i<arrayProd.length;i++){
+                carrito.append($(`<div class="row pt-2"><p class="col-8">${arrayProd[i]}</p><button id="btn${i}"class="btn btn-danger col-4">X</button>`))
+                ActualizarCarrito(arrayProd[i]);
+            }
         }
+        
         contador=contador+i+1;
     }
 }
@@ -96,11 +101,13 @@ function ManejarProductosCarrito(producto){
         console.table(productosCarrito);
         console.table(arrayNuevo);
         if(productosCarrito[i]!=producto){
+            console.log(productosCarrito[i])
             arrayNuevo.push(productosCarrito[i]);
         }
     }
     console.table(arrayNuevo)
     productosCarrito=arrayNuevo;
+    console.log("Array nuevo: "+ productosCarrito)
     localStorage.clear();
     localStorage.setItem('productos', arrayNuevo);
 
@@ -134,7 +141,7 @@ function LeerLS(){
     RecargarCarrito(productosLS)
 
 }
-
+/* Finaliza Carrito */
 
 
 function main(){
@@ -142,7 +149,7 @@ function main(){
     AgregarAlCarrito(carrito)
     $(document).ready(LeerLS());
     EliminarProducto();
-    VaciarCarrito();
+    VaciarCarrito();  
 }   
 
 main();
