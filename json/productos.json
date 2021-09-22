@@ -1,0 +1,268 @@
+{
+    "RickyFort": {
+        "name": "Medias Ricardo Fort",
+        "src": "../images/medias1.jpg",
+        "price": "280"
+    },
+    "Pikachu": {
+        "name": "Medias Pikachu",
+        "src": "../images/medias2.jpg",
+        "price": "330"
+    },
+    "RayasNegras": {
+        "name": "Medias de rayas Negras",
+        "src": "../images/medias3.jpg",
+        "price": "280"
+    },
+    "Banana": {
+        "name": "Medias Banana",
+        "src": "../images/medias4.jpg",
+        "price": "280"
+    },
+    "Squirtle": {
+        "name": "Medias Squirtle",
+        "src": "../images/medias5.jpg",
+        "price": "330"
+    },
+    "Flama": {
+        "name": "Medias Flama",
+        "src": "../images/medias6.jpg",
+        "price": "330"
+    },
+    "Pizza": {
+        "name": "Medias Pizza",
+        "src": "../images/medias7.jpeg",
+        "price": "280"
+    },
+    "ChalaRosa": {
+        "name": "Medias Chala Rosa",
+        "src": "../images/medias8.jpeg",
+        "price": "280"
+    },
+    "Daria": {
+        "name": "Medias Daria",
+        "src": "../images/medias9.jpeg",
+        "price": "280"
+    },
+    "Bulbasaur": {
+        "name": "Medias Bulbasaur",
+        "src": "../images/medias10.jpeg",
+        "price": "330"
+    },
+    "RayasBlancas": {
+        "name": "Medias Rayas Blancas",
+        "src": "../images/medias11.jpeg",
+        "price": "280"
+    },
+    "Chala": {
+        "name": "Medias Chala",
+        "src": "../images/medias12.jpeg",
+        "price": "330"
+    },
+    "MonioRosa": {
+        "name": "Monio rosa",
+        "src": "../images/pelo1.jpeg",
+        "price": "130"
+    },
+    "MonioFloreado": {
+        "name": "Monio floreado",
+        "src": "../images/pelo2.jpeg",
+        "price": "130"
+    },
+    "MonioSalmon": {
+        "name": "Monio salmon",
+        "src": "../images/pelo3.jpeg",
+        "price": "130"
+    },
+    "MonioVioleta": {
+        "name": "Monio violeta",
+        "src": "../images/pelo4.jpeg",
+        "price": "130"
+    },
+    "MonioDeRosas": {
+        "name": "Monio de rosas",
+        "src": "../images/pelo5.jpeg",
+        "price": "130"
+    },
+    "MonioRojo": {
+        "name": "Monio rojo",
+        "src": "../images/pelo6.jpeg",
+        "price": "130"
+    },
+    "MonioDeHjitas": {
+        "name": "Monio de hojitas",
+        "src": "../images/pelo7.jpeg",
+        "price": "130"
+    },
+    "Scrunchies": {
+        "name": "Scrunchies",
+        "src": "../images/pelo8.jpeg",
+        "price": "130"
+    },
+    "RinioEsmeraldaNegra": {
+        "name": "Rinionera esmeralda negra",
+        "src": "../images/Rinio.jpeg",
+        "price": "700"
+    },
+    "RinioKaliaAmarilla":{
+        "name": "Rinionera KALIA amarilla",
+        "src": "../images/rinio1.jpeg",
+        "price": "850"
+    },
+    "RinioEmma":{
+        "name": "Rinionera EMMA negra",
+        "src": "../images/rinio2.jpeg",
+        "price": "750"
+    },
+    "RinioBlack":{
+        "name": "Rinionera BLACK",
+        "src": "../images/rinio3.jpeg",
+        "price": "950"
+    },
+    "RinioCamel":{
+        "name": "Rinionera CAMEL con cadena",
+        "src": "../images/rinio4.jpeg",
+        "price": "700"
+    },
+    "RinioCrocco":{
+        "name": "Rinionera CROCCO negra",
+        "src": "../images/rinio5.jpeg",
+        "price": "950"
+    },
+    "RinioKaliaBlanca":{
+        "name": "Rinionera KALIA blanca",
+        "src": "../images/rinio8.jpeg",
+        "price": "850"
+    },
+    "RinioKaliaNegra":{
+        "name": "Rinionera KALIA negra",
+        "src": "../images/rinio7.jpeg",
+        "price": "700"
+    },
+    "AroCactus":{
+        "name": "Aritos Cactus",
+        "src": "../images/acero1.jpeg",
+        "price": "430"
+    },
+    "AroFlor":{
+        "name": "Aritos Flor",
+        "src": "../images/acero2.jpeg",
+        "price": "430"
+    },
+    "AroHoja":{
+        "name": "Aritos Hoja",
+        "src": "../images/acero3.jpeg",
+        "price": "430"
+    },
+    "AroCorona":{
+        "name": "Aritos Corona",
+        "src": "../images/acero4.jpeg",
+        "price": "430"
+    },
+    "AroHojaFina":{
+        "name": "Aritos Hojita",
+        "src": "../images/acero5.jpeg",
+        "price": "430"
+    },
+    "AroEstrella":{
+        "name": "Aritos Estrella",
+        "src": "../images/acero6.jpeg",
+        "price": "430"
+    },
+    "AroFlecha":{
+        "name": "Aritos Flecha",
+        "src": "../images/acero7.jpeg",
+        "price": "430"
+    },
+    "AroLuna":{
+        "name": "Aritos Luna",
+        "src": "../images/acero8.jpeg",
+        "price": "430"
+    },
+    "AroLunaEstrella":{
+        "name": "Aritos Luna con Estrella",
+        "src": "../images/acero9.jpeg",
+        "price": "430"
+    },
+    "AroMargarita":{
+        "name": "Aritos Margarita",
+        "src": "../images/acero10.jpeg",
+        "price": "430"
+    },
+    "BilleDRosa":{
+        "name": "Billetera DIAMANTE rosa",
+        "src": "../images/bille1.jpeg",
+        "price": "730"
+    },
+    "BileDRoja":{
+        "name": "Billetera DIAMANTE roja",
+        "src": "../images/bille2.jpeg",
+        "price": "730"
+    },
+    "BilleSRosa":{
+        "name": "Billetera SIRENA rosa",
+        "src": "../images/bille3.jpeg",
+        "price": "730"
+    },
+    "BilleSCeleste":{
+        "name": "Billetera SIRENA celeste",
+        "src": "../images/bille4.jpeg",
+        "price": "730"
+    },
+    "BilleSLila":{
+        "name": "Billetera SIRENA lila",
+        "src": "../images/bille5.jpeg",
+        "price": "730"
+    },
+    "BilleDAzul":{
+        "name": "Billetera DIAMANTE azul",
+        "src": "../images/bille6.jpeg",
+        "price": "730"
+    },
+    "BilleSBlanca":{
+        "name": "Billetera Sirena blanca",
+        "src": "../images/bille7.jpeg",
+        "price": "730"
+    },
+    "BilleDNegra":{
+        "name": "Billetera DIAMANTE negra",
+        "src": "../images/bille8.jpeg",
+        "price": "730"
+    },
+    "RuanaRosa":{
+        "name": "Ruana Rosa",
+        "src": "../images/ruana1.jpeg",
+        "price": "850"
+    },
+    "RuanaBordo":{
+        "name": "Ruana Bordo",
+        "src": "../images/ruana2.jpeg",
+        "price": "850"
+    },
+    "RuanaRayada":{
+        "name": "Ruana rayada",
+        "src": "../images/ruana3.jpeg",
+        "price": "850"
+    },
+    "RuanaRoja":{
+        "name": "Ruana Roja",
+        "src": "../images/ruana4.jpeg",
+        "price": "850"
+    },
+    "RuanaMarron":{
+        "name": "Ruana Marron",
+        "src": "../images/ruana5.jpeg",
+        "price": "850"
+    },
+    "RuanaMostaza":{
+        "name": "Ruana mostaza",
+        "src": "../images/ruana6.jpeg",
+        "price": "850"
+    },
+    "RuanaBlanca":{
+        "name": "Ruana Blanca",
+        "src": "../images/ruana7.jpeg",
+        "price": "850"
+    }
+
+}

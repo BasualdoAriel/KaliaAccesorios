@@ -54,7 +54,7 @@
           <img src="../images/pelo1.jpeg" class="card-img-top imagenProducto" alt="Moño rosa">
           <div class="card-img-overlay d-flex">
             <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal"
-              data-bs-target="#modalMonioRosa">Ver más</a>
+              data-bs-target="#modalJS" id="MonioRosa">Ver más</a>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@
           <img src="../images/pelo2.jpeg" class="card-img-top imagenProducto" alt="Moño floreado">
           <div class="card-img-overlay d-flex">
             <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal"
-              data-bs-target="#modalMonioFloreado">Ver más</a>
+              data-bs-target="#modalJS" id="MonioFloreado">Ver más</a>
           </div>
         </div>
       </div>
@@ -72,7 +72,7 @@
           <img src="../images/pelo3.jpeg" class="card-img-top imagenProducto" alt="Moño salmón">
           <div class="card-img-overlay d-flex">
             <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal"
-              data-bs-target="#modalMonioSalmon">Ver más</a>
+              data-bs-target="#modalJS" id="MonioSalmon">Ver más</a>
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@
           <img src="../images/pelo4.jpeg" class="card-img-top imagenProducto" alt="Moño violeta">
           <div class="card-img-overlay d-flex">
             <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal"
-              data-bs-target="#modalMonioVioleta">Ver más</a>
+              data-bs-target="#modalJS" id="MonioVioleta">Ver más</a>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@
           <img src="../images/pelo5.jpeg" class="card-img-top imagenProducto " alt="Moño de rosas">
           <div class="card-img-overlay d-flex">
             <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal"
-              data-bs-target="#modalMonioRosas">Ver más</a>
+              data-bs-target="#modalJS" id="MonioDeRosas">Ver más</a>
           </div>
         </div>
       </div>
@@ -102,7 +102,7 @@
           <img src="../images/pelo6.jpeg" class="card-img-top imagenProducto" alt="Moño rojo">
           <div class="card-img-overlay d-flex">
             <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal"
-              data-bs-target="#modalMonioRojo">Ver más</a>
+              data-bs-target="#modalJS" id="MonioRojo">Ver más</a>
           </div>
         </div>
       </div>
@@ -111,7 +111,7 @@
           <img src="../images/pelo7.jpeg" class="card-img-top imagenProducto" alt="Moño hojas">
           <div class="card-img-overlay d-flex">
             <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal"
-              data-bs-target="#modalMonioHojas">Ver más</a>
+              data-bs-target="#modalJS" id="MonioDeHjitas">Ver más</a>
           </div>
         </div>
       </div>
@@ -120,26 +120,30 @@
           <img src="../images/pelo8.jpeg" class="card-img-top imagenProducto" alt="Scruncies">
           <div class="card-img-overlay d-flex">
             <a href="#" class="btn btn-primary shadowBtn mt-auto mx-auto" data-bs-toggle="modal"
-              data-bs-target="#modalScrunchies">Ver más</a>
+              data-bs-target="#modalJS" id="Scrunchies">Ver más</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-
-  <!-- Modals -->
-  <!-- Modal Moño rosa -->
-  <div class="modal fade text-center" id="modalMonioRosa" tabindex="-1" aria-labelledby="exampleModalLabel"
+  <!-- MODAL -->
+  <div class="modal fade text-center" id="modalJS" tabindex="-1" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Moño rosa</h5>
+          <h5 class="modal-title" id="tituloModal"></h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="../images/pelo1.jpeg" alt="Moño rosa" class="w-100 h-100">
+          <img src="" alt="" class="w-100 h-100" id="imagenModal">
+          <div class="row align-items-center">
+            <div class="col-5"></div>
+            <h5 class="col-1">$</h5>
+            <h5 class="col-1" id="modalPrecio"></h5>
+            <div class="col-5"></div>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -148,148 +152,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Modal Moño rosa -->
-  <div class="modal fade text-center" id="modalMonioFloreado" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Moño floreado</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="../images/pelo2.jpeg" alt="Moño flores" class="w-100 h-100">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary agregarCarrito">Agregar al carrito</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal Moño salmón -->
-  <div class="modal fade text-center" id="modalMonioSalmon" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Moño salmón</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="../images/pelo3.jpeg" alt="Moño salmón" class="w-100 h-100">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary agregarCarrito">Agregar al carrito</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal Moño Violeta -->
-  <div class="modal fade text-center" id="modalMonioVioleta" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Moño violeta</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="../images/pelo4.jpeg" alt="Moño violeta" class="w-100 h-100">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary agregarCarrito">Agregar al carrito</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal Moño rosa -->
-  <div class="modal fade text-center" id="modalMonioRosas" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Moño de rosas</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="../images/pelo5.jpeg" alt="Moño de rosas" class="w-100 h-100">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary agregarCarrito">Agregar al carrito</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal Moño rojo -->
-  <div class="modal fade text-center" id="modalMonioRojo" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Moño rojo</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="../images/pelo6.jpeg" alt="Moño rosa" class="w-100 h-100">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary agregarCarrito">Agregar al carrito</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal Moño Hojas -->
-  <div class="modal fade text-center" id="modalMonioHojas" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Moño de hojitas</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="../images/pelo7.jpeg" alt="Moño rosa" class="w-100 h-100">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary agregarCarrito">Agregar al carrito</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal Scrunchies -->
-  <div class="modal fade text-center" id="modalScrunchies" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Scrunchies</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="../images/pelo8.jpeg" alt="Scrunchies" class="w-100 h-100">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary agregarCarrito">Agregar al carrito</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
 
   <!-- Separador -->
   <section class="container d-flex p-3 mt-2 separadorBG d-sm-flex d-lg-block">
@@ -339,7 +201,8 @@
           src="../images/whatsapp (1).png" alt="logo whatsapp" class="whatsappImagen"></a>
     </div>
   </section>
-
+  <script src="../js/navbar.js"></script>
+  <script src="../js/modal.js"></script>
   <script src="../js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
