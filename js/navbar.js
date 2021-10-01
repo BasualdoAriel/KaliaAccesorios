@@ -1,4 +1,6 @@
 /* INICIA NAVBAR */
+
+/* Esta función agrega el navbar correspondiente al index.htlm */
 function NavBarIndex(){
     $('body').prepend(`<header>
     <!-- inicio Navbar -->
@@ -65,6 +67,7 @@ function NavBarIndex(){
   </header>`)
 }
 
+/* Esta función agrega el navbar correspondiente a los diferenes elementos de la carpeta sections*/
 function NavBarSection(){
     $('body').prepend(` <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -126,6 +129,7 @@ function NavBarSection(){
   </header>`)
 }
 
+/* Esta función verifica el titulo del html actual */
 function VerificarTitulo(){
     let titulo=document.title
     if(titulo ==="Kalia Accesorios | Encontrá eso que estabas buscando!"){

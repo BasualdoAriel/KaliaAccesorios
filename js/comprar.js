@@ -1,3 +1,5 @@
+
+/* Esta función calcula el precio final a abonar */
 function CalcularPrecioFinal(listaPrecio) {
     let precios = listaPrecio.split(',');
     contador = 0;
@@ -7,6 +9,7 @@ function CalcularPrecioFinal(listaPrecio) {
     return contador;
 }
 
+/* Esta función verifica si existen o no productos en el carrito */
 function HayProductos(productos) {
     if (productos != null) {
         return true;
@@ -15,7 +18,9 @@ function HayProductos(productos) {
     }
 }
 
-function MostrarCantidadProductos(productos, precios) {
+
+/* Esta función modifica el DOM mostrando la cantidad numérica de productos en el carrito y el precio final a abonar. */
+function MostrarCantidadProductos(productos, precio) {
     $('#cantidadProductosCarrito').append($(`<p class="nombreProducto">Agregaste un total de ${productos.length} productos y abonás: </p>
         <div class="btn-group" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-success" data-bs-toggle="offcanvas"
@@ -24,7 +29,7 @@ function MostrarCantidadProductos(productos, precios) {
             <button type="button" class="btn btn-success" id="comprar">Comprar</button>
         </div>
         `))
-    $('#precioFinal').append($(`<div class="badge rounded-pill bg-info text-dark">$ ${precios}</div>`))
+    $('#precioFinal').append($(`<div class="badge rounded-pill bg-info text-dark">$ ${precio}</div>`))
     $('#comprar').click(() => {
         swal({
             title: "Gracias por tu compra!",
@@ -36,6 +41,8 @@ function MostrarCantidadProductos(productos, precios) {
     })
 }
 
+
+/* Esta función obtiene los datos del carrito, por LS, y llama a las funciones que modifican el DOM */
 function Comprar() {
     let productosLS = localStorage.getItem('productos');
     let preciosLS = localStorage.getItem('precios');

@@ -1,3 +1,4 @@
+/* Esta función obtiene información de productos.json y modifica el modal existente en el html */
 async function ObtenerInfo(id){
     try{
         const data= await fetch('../json/productos.json');
@@ -15,6 +16,7 @@ async function ObtenerInfo(id){
 
 }
 
+/* Esta función escucha los botones para la generación del modal */
 function EscucharBotones() {
     const botones = document.querySelectorAll('.btn-primary');
     botones.forEach(boton => {

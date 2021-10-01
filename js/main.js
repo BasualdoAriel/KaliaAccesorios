@@ -1,10 +1,13 @@
 /* Defino el nodo del carrito */
 const carrito = $('.offcanvas-body');
+/* Defubi ek nodo a la compra total */
 const compraTotal=$('#totalCompra');
-/* Creo  array para el carrito*/
+/* Creo  array para el carrito, sus precios*/
 let productosCarrito = [];
 let preciosCarrito = []
+/* Esta variable sirve para identificar el id del boton*/
 let contador=0
+/* Variable al precio total */
 let precioTotal = 0;
 
 /* Esta función agrega el nombre del producto al carrito y lo actualiza*/
@@ -14,7 +17,8 @@ function Agregar(nombreProducto, precioProducto) {
     ActualizarCarrito(`${nombreProducto}`, `${precioProducto}`);
 }
 
-/* Esta función verifica el estado del LocalStorage, si LS es null, devuelve array vacio. Si el LS tiene info la devuelve*/
+/* Esta función verifica el estado del LocalStorage, si LS es null, devuelve array vacio. Si el LS tiene info la devuelve,
+ además modifica el ícono del carrito dependiendo si hay o no productos en el mismo*/
 function VerificarLocalStorage(itemAVerificar) {
     let data;
     if (localStorage.getItem(`${itemAVerificar}`) === null) {
@@ -35,7 +39,7 @@ function VerificarLocalStorage(itemAVerificar) {
     return data;
 }
 
-/* Esta función corroborar el LS y luego agrega al array del carrito la info */
+/* Esta función corrobora el LS y luego la agrega al array del carrito, lo mismo con los precios */
 function ActualizarCarrito(producto, precio) {
     productos = VerificarLocalStorage('productos');
     precios = VerificarLocalStorage('precios')
@@ -43,12 +47,13 @@ function ActualizarCarrito(producto, precio) {
     preciosCarrito.push(precio);
 }
 
+/* Esta función arma un toast cuando se agrega un producto al carrito */
 function ArmarToast(nombreProducto) {
     $(".toast").append(`<div class="toast-body pt-0">Agregaste al carrito: ${nombreProducto}</div>`);
     $(".toast").toast('show');
 }
 
-/* Esta función identifica todos los botones de agregar al carrito y comienza el proceso de adhesión al carro */
+/* Esta función identifica todos los botones de agregar al carrito y comienza el proceso de adhesión, además los añade al LS */
 function AgregarAlCarrito() {
     let botones = $('.agregarCarrito');
     for (let boton of botones) {
@@ -65,7 +70,7 @@ function AgregarAlCarrito() {
 
 
 
-/*Esta función elimina, ocualta con una animación los productos y la info del toast. luego los elimina */
+/*Esta función elimina, y oculta con una animación, los productos y la info del toast.*/
 function EliminarCarrito() {
     $(".offcanvas-body").slideUp('slow', () => {
         $(".offcanvas-body").empty();
@@ -106,6 +111,8 @@ function RecargarCarrito(arrayProductos, arrayPrecios) {
     compraTotal.append($(`<p class="precioFinal">$ ${precioTotal}</p>`))
 }
 
+
+/* Esta función se encarga de eliminar un producto del carrito y genera los nuevos arrays del carrito actualizado*/
 function ManejarProductosCarrito(producto) {
     let arrayNuevoProductos = []
     let arrayNuevoPrecios=[]
@@ -129,7 +136,7 @@ function ManejarProductosCarrito(producto) {
 }
 
 
-/* Esta función accede al LS*/
+/* Esta función accede al LS y llama a RecargarCarrito()*/
 function LeerLS() {
     let productosLS;
     let preciosLS;
@@ -138,8 +145,9 @@ function LeerLS() {
     RecargarCarrito(productosLS, preciosLS)
 
 }
-/* Finaliza Carrito */
 
+
+/*Esta función permite eliminar, individualmente, los productos del carrito */
 function EliminarProducto() {
     const productoEliminar=document.querySelectorAll('.btn-danger');
     for (let producto of productoEliminar) {
@@ -154,6 +162,8 @@ function EliminarProducto() {
     }            
 }
 
+
+/* Esta función recargar el carrito cada vez que se ingresa al mismo */
 function ClickCarrito(){
     const botonCarrito=document.querySelector('.offcanvasBack');
     botonCarrito.onclick=()=>{
@@ -166,7 +176,7 @@ function ClickCarrito(){
     }
 }
 
-
+/* Función main, invoca a todas las demás. */
 function main() {
     $(".offcanvas-body").empty();
     $(document).ready(LeerLS());
