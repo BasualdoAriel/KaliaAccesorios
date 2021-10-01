@@ -160,6 +160,26 @@ body {
   min-height: 90%;
 }
 
+.imgCompra {
+  width: 9vh;
+  height: 9vh;
+  border-radius: 2vh;
+}
+
+.nombreProducto {
+  color: whitesmoke;
+}
+
+.mercadoPago {
+  width: 100%;
+  height: 100%;
+}
+
+.compraOff {
+  text-decoration: none;
+  color: white;
+}
+
 .tituloSeccion {
   padding-top: 100px;
   padding-bottom: 25px;

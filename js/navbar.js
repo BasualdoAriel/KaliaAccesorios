@@ -45,7 +45,18 @@ function NavBarIndex(){
             </div>
             <div class="offcanvas-body "></div>
             <div class="offcanvas-footer">
-              <button type="button" class="btn btn-dark mx-2 mb-2 vaciarCarrito">Vaciar Carrito</button>
+              <div class="row d-flex text-center">
+                <div class="col-3">
+                  <button type="button" class="btn btn-dark mx-2 mb-2 vaciarCarrito">Vaciar Carrito</button>
+                </div>
+                <div class="col-5">
+                  <h6>TOTAL</h6>
+                  <p id="totalCompra"></p>
+                </div>
+                <div class="col-4">
+                <button type="button" class="btn btn-dark mx-2 mb-2 compraOff"><a href="sections/compra.html" class="compraOff">Comprar</a></button>
+                </div>
+              </div
             </div>
           </div>
         </div>
@@ -95,7 +106,18 @@ function NavBarSection(){
             <div class="offcanvas-body ">
             </div>
             <div class="offcanvas-footer">
-              <button type="button" class="btn btn-dark mx-2 mb-2 vaciarCarrito">Vaciar Carrito</button>
+              <div class="row d-flex text-center">
+                <div class="col-3">
+                  <button type="button" class="btn btn-dark mx-2 mb-2 vaciarCarrito">Vaciar Carrito</button>
+                </div>
+                <div class="col-5">
+                  <h6>TOTAL</h6>
+                  <p id="totalCompra"></p>
+                </div>
+                <div class="col-4">
+                <button type="button" class="btn btn-dark mx-2 mb-2 compraOff"><a href="../sections/compra.html" class="compraOff">Comprar</a></button>
+                </div>
+              </div
             </div>
           </div>
         </div>

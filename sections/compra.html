@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Josefin+Sans&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Tinos:wght@700&display=swap"
+		rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/style.css">
+	<!-- JQUERY -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer">
+	</script>
+	<title>Document</title>
+</head>
+
+<body>
+	
+	<div class="container ">
+		<h1 class=" display-2  col-12 tituloSeccion">Carrito</h1>
+		<div class="row pt-4">
+			<div class="col-6 bg-dark text-center" id="cantidadProductosCarrito">
+				
+			</div>
+			<div class="col-6 bg-dark text-end" id="precioFinal">
+			</div>
+		</div>
+
+	</div>
+
+	 <!-- Separador -->
+	 <section class="container d-flex p-3 mt-2 separadorBG d-sm-flex d-lg-block">
+		<div class="text-center">
+			<img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/785X40.jpg" 
+			title="Mercado Pago - Medios de pago" alt="Mercado Pago - Medios de pago" 
+			width="785" height="40"/>
+		</div>
+		<nav class="navbar navbar-light  justify-content-center">
+		  <a class="navbar-brand separadorLink" href="#">
+			<img src="../images/tarjeta-de-credito.png" alt="tarjeta de crédito" width="40" height="28"
+			  class="d-inline-block align-text-top imagenSeparador">
+			Aceptamos tarjetas!
+		  </a>
+		  <a class="navbar-brand separadorLink" href="#">
+			<img src="../images/entrega.png" alt="camion de entregas" width="40" height="28"
+			  class="d-inline-block align-text-top imagenSeparador">
+			Hacemos envios!
+		  </a>
+		</nav>
+		</div>
+	  </section>
+	  <section id="contacto" class="container separadorBG pt-4">
+		<h4 class="text-center tituloMenu">¿Tenés dudas? Contactanos!</h3>
+		  <div class="row">
+			<div class="col-sm-12 col-lg-6">
+			  <form class="contactoEmail" name="contact-form" method="POST" action="https://formspree.io/f/xnqlzrga">
+				<div class="mb-3">
+				  <label for="exampleName" class="form-label tituloMenu">Tu nombre</label>
+				  <input type="text" class="form-control" id="exampleName" aria-describedby="emailHelp" name="nombre"
+					required="required">
+				</div>
+				<div class="mb-3">
+				  <label for="exampleInputEmail1" class="form-label tituloMenu">Tu correo electrónico</label>
+				  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+					name="_replyto" required="required">
+				  <div id="emailHelp" class="form-text tituloMenu">Esta información no será compartida.
+				  </div>
+				</div>
+				<div class="mb-3">
+				  <label for="exampleFormControlTextarea1" class="form-label tituloMenu">Mensaje</label>
+				  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+				</div>
+				<div class="mb-3 form-check">
+				  <input type="checkbox" class="form-check-input tituloMenu" id="exampleCheck1">
+				  <label class="form-check-label" for="exampleCheck1">Suscribirme al Newsletter</label>
+				</div>
+				<button type="submit" class="btn btn-primary tituloMenu">Enviar</button>
+			  </form>
+			</div>
+			<div class="col-lg-6 d-lg-flex d-none flex-column align-items-center cobertura">
+			  <p class="tituloMenu" id="envios">Nuestra zona de cobertura</p>
+			  <iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13126.942644577264!2d-58.37640690805811!3d-34.661378137112216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3335230bd052b%3A0x9d632a18eea90a31!2sAvellaneda%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1620160435017!5m2!1ses-419!2sar"
+				style="border:0;" allowfullscreen="" loading="lazy" class="map pb-5 ps-3"></iframe>
+			</div>
+		  </div>
+	  </section>
+
+	  <section class="container">
+		<nav class="navbar navbar-light bg-light d-flex bg-transparent">
+		  <div class="container justify-content-center">
+			<a class="navbar-brand " href="https://www.instagram.com/accesorioskalia/" target="_blank" rel="noreferrer">
+			  <img src="../images/insta.png" alt="logo instagram" width="30" height="24">
+			</a>
+			<a class="navbar-brand" href="https://www.facebook.com/accesorioskalia" target="_blank" rel="noreferrer">
+			  <img src="../images/facebook.png" alt=" logo facebook" width="30" height="24">
+			</a>
+		  </div>
+		</nav>
+		<p class="text-center">© 2021 KALIA, todos los derechos reservados.</p>
+		<!-- Whatsapp -->
+		<div class="fixed-bottom whatsapp">
+		  <a href="https://wa.me/message/AOX4YOR5RHF4I1" class="whatsapp" target="_blank" rel="noreferrer"><img
+			  src="../images/whatsapp (1).png" alt="logo whatsapp" class="whatsappImagen"></a>
+		</div>
+	  </section>
+
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="../js/navbar.js"></script>
+
+	<script src="../js/main.js"></script>
+	<script src="../js/comprar.js"></script>
+	<!-- Scripts bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+		integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>
